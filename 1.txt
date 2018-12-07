@@ -1,0 +1,35 @@
+
+
+
+
+#include <stdio.h>
+int main()
+
+{
+    char wordmap[100];
+    char c;
+    printf("Enter a character: ");
+    scanf("%c", &c);  
+    for(i=0;i<100;i++)
+{
+	if(c[i]==wordmap[i])
+	{
+	int t;
+	t==wordmap[i];
+	wordmap[i]=c[i];
+	c[i]=t;
+	}    
+        
+	else if(c[i]==int value)
+	{
+	c[i]=c[i]*wordmap[i];
+
+	else
+	{
+    	printf("ASCII value of %c = %d", c, c);
+	}
+} 
+
+
+   return 0;
+}

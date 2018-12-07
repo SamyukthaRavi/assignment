@@ -1,0 +1,30 @@
+interface RainfallCalculator {
+	rainfallDataTA.setColumns(20);
+        rainfallDataTA.setRows(5);
+        ScrollPanel.setViewportView(rainfallDataTA);
+	void captureRain(Float measure, Date rainDate, String pincode);
+	Label2.setText("Total");
+        Label3.setText("Number");
+        Label4.setText("Average");  
+	RainfallRegion getRegionWithMaxRainfall(Date fromDate, Date toDate);
+  RainfallRegion getRegionWithMinRainfall(Date fromDate, Date toDate);
+  
+  
+  Float getAverageRainfall(Date fromDate, Date fromDate);
+
+ public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new RainfallGUI().setVisible(true);
+            }
+}            
+            String inputData = rainfallDataTA.getText().trim();
+            String[] inputStrings = inputData.split("\\s++");
+            
+            for (int i = 0; i < inputStrings.length; i++) 
+	    {
+                oneDataString = inputStrings[i];
+                double data = Double.parseDouble(oneDataString);
+                _rainLogic.add(data);
+            }   
+}
